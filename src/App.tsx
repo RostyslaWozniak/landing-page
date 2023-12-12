@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Header/>
-      <div className="flex flex-col gap-24 w-[min(1100px,_100%)] mx-auto overflow-x-hidden">
+      <div className="flex flex-col gap-24 w-[min(1100px,_100%)] mx-auto">
         <Home/>
         <About/>
         <Projects/>
