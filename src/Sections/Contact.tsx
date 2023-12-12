@@ -1,16 +1,16 @@
 const Contact = () => {
     const contactIcons = [
-        {name: "www.faceboock.com", url: "public/svg/contact-icons/faceboock.svg"},
-        {name: "www.instagram.com", url: "public/svg/contact-icons/instagram.svg"},
-        {name: "gmail@example.com", url: "public/svg/contact-icons/email.svg"},
-        {name: "+38 000 000 000", url: "public/svg/contact-icons/viber.svg"},
+        {name: "www.faceboock.com", url: "svg/contact-icons/faceboock.svg"},
+        {name: "www.instagram.com", url: "svg/contact-icons/instagram.svg"},
+        {name: "gmail@example.com", url: "svg/contact-icons/email.svg"},
+        {name: "+38 000 000 000", url: "svg/contact-icons/viber.svg"},
     ]
 
 
 
     const constactElements = contactIcons.map(icon => (
         <div key={icon.name} className="group relative w-[250px] h-[150px] flex justify-center items-end py-[20px] text-[1.2rem] bg-accent rounded-lg border cursor-pointer shadow-small">
-            <div style={{borderBottom: '1px solid', borderRight: '1px solid', borderTop: '1px solid transparent', borderLeft: '1px solid transparent'}}  className="absolute top-[-50px] left-[50%] rotate-[45deg] translate-x-[-50%] w-[100px] h-[100px] flex justify-center items-center bg-[url(public/background/EMBROIDERY.jpg)] rounded-[50%]">
+            <div style={{borderBottom: '1px solid', borderRight: '1px solid', borderTop: '1px solid transparent', borderLeft: '1px solid transparent'}}  className="absolute top-[-50px] left-[50%] rotate-[45deg] translate-x-[-50%] w-[100px] h-[100px] flex justify-center items-center bg-[url(/background/EMBROIDERY.jpg)] rounded-[50%]">
                 <img src={icon.url} alt={icon.name} className="rotate-[-45deg] group-hover:scale-[120%] group-hover:translate-y-[-10px] group-hover:translate-x-[-10px]  duration-300"/>
             </div>
         <a >{icon.name}</a>

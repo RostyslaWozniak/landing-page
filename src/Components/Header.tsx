@@ -51,7 +51,7 @@ const Header = () => {
           className="tablet:hidden"
           onClick={() => setBurgerMenu(!burgerMenu)}
         >
-          <img src="public/svg/burger-btn.svg"/> 
+          <img src="svg/burger-btn.svg"/> 
         </button>
       </div>
       
